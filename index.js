@@ -8,7 +8,7 @@ const s4 = "bread";
 const s5 = "and";
 
 // Concatenate the string variables into one new string
-let result = (s1 + " " + s2 + " " + s3 + " " + s4 + " " + s5 + " ");
+let result = (s1 + " " + s2 + " " + s3 + " " + s4 + " " + s5 + " " + s3 + " " + s2 + " " + s1 + " " + s4);
 
 // Print out the concatenated string
 
@@ -63,7 +63,7 @@ function getRandomInt(min, max){
     min = Math.floor(min);
     return Math.floor(Math.random() * (max - min + 1) +min);
 }
-let randomInt = getRandomInt(0,10);
+let randomInt = getRandomInt(1,10);
 
 // Print the generated random number
 console.log(randomInt);
@@ -78,23 +78,23 @@ const b = false;
 
 // Try and guess the output of the below expressions first and write your answers down:
 const expression1 = a && b;
-false
+//false
 const expression2 = a || b;
-true
+//true
 const expression3 = !a && b;
-false
+//false
 const expression4 = !(a && b);
-true
+//true
 const expression5 = !a || !b;
-true
+//true
 const expression6 = !(a || b);
-false
+//false
 const expression7 = a && a;
-true
-console.log(expression1);
-console.log(expression2);
-console.log(expression3);
-console.log(expression4);
-console.log(expression5);
-console.log(expression6);
-console.log(expression7);
+//true
+console.log("expression1", expression1);
+console.log("expression2", expression2);
+console.log("expression3", expression3);
+console.log("expression4", expression4);
+console.log("expression5", expression5);
+console.log("expression6", expression6);
+console.log("expression7", expression7);
